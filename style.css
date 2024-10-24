@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 35%;
+    max-width: 500px;
+    padding: 30px;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.profile-section {
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 6px solid #1e90ff;
+    transition: box-shadow 0.3s ease;
+}
+
+.profile-pic:hover {
+    box-shadow: 0 0 15px rgba(30, 144, 255, 0.6);
+}
+
+.about-section, .projects-section, .contact-section {
+    background-color: #f9f9f9;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease;
+    text-align: justify; 
+}
+
+.about-section:hover, .projects-section:hover, .contact-section:hover {
+    background-color: #e0f7fa;
+}
+
+h2 {
+    color: #1e90ff;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center; 
+}
+
+p, a {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #1e90ff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff6347;
+    text-decoration: underline;
+}
+
+.projects-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.projects-section li {
+    margin-bottom: 10px;
+}
+
+.projects-section li a {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.projects-section li a:hover {
+    color: #ff6347;
+}
+
+.contact-section p, .contact-section a {
+    margin: 8px 0;
+    font-size: 1rem;
+    color: #555;
+    text-align: justify;
+}
+
+.contact-section a {
+    font-size: 1.1rem;
+    color: #1e90ff;
+    font-weight: bold;
+}
+
+.contact-section a:hover {
+    color: #ff6347;
+}
